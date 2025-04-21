@@ -1,0 +1,19 @@
+2025/04/19-08:05:01.577 21472 Reusing MANIFEST /home/carlos-grandis/Next-Application/real-estate-automation/backend/nakane-imoveis/session/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/04/19-08:05:01.579 21472 Recovering log #506
+2025/04/19-08:05:01.593 21472 Reusing old log /home/carlos-grandis/Next-Application/real-estate-automation/backend/nakane-imoveis/session/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000506.log 
+2025/04/19-08:05:09.244 21444 Level-0 table #514: started
+2025/04/19-08:05:09.250 21444 Level-0 table #514: 135994 bytes OK
+2025/04/19-08:05:09.252 21444 Delete type=0 #506
+2025/04/19-08:05:09.253 21448 Manual compaction at level-0 from '\x00J\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00K\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/04/19-08:05:12.537 21444 Compacting 1@1 + 4@2 files
+2025/04/19-08:05:12.635 21444 Generated table #515@1: 70139 keys, 2233126 bytes
+2025/04/19-08:05:12.702 21444 Generated table #516@1: 30053 keys, 2191289 bytes
+2025/04/19-08:05:12.791 21444 Generated table #517@1: 55301 keys, 2211338 bytes
+2025/04/19-08:05:12.794 21444 Generated table #518@1: 1526 keys, 32988 bytes
+2025/04/19-08:05:12.794 21444 Compacted 1@1 + 4@2 files => 6668741 bytes
+2025/04/19-08:05:12.796 21444 compacted to: files[ 0 0 4 0 0 0 0 ]
+2025/04/19-08:05:12.797 21444 Delete type=2 #514
+2025/04/19-08:05:12.797 21444 Delete type=2 #510
+2025/04/19-08:05:12.797 21444 Delete type=2 #509
+2025/04/19-08:05:12.797 21444 Delete type=2 #511
+2025/04/19-08:05:12.797 21444 Delete type=2 #508

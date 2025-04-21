@@ -1,0 +1,6 @@
+2025/04/19-08:11:22.815 2178e Reusing MANIFEST /home/carlos-grandis/Next-Application/real-estate-automation/backend/nakane-imoveis/session/session/Default/Local Storage/leveldb/MANIFEST-000001
+2025/04/19-08:11:22.817 2178e Recovering log #19
+2025/04/19-08:11:22.818 2178e Reusing old log /home/carlos-grandis/Next-Application/real-estate-automation/backend/nakane-imoveis/session/session/Default/Local Storage/leveldb/000019.log 
+2025/04/19-08:13:24.534 2178e Level-0 table #24: started
+2025/04/19-08:13:24.542 2178e Level-0 table #24: 17190 bytes OK
+2025/04/19-08:13:24.545 2178e Delete type=0 #19
