@@ -1,0 +1,49 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../../../node_modules/@prisma/client-nakane"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("NAKANE_DATABASE_URL")
+}
+
+model Contact {
+  id        Int      @id @default(autoincrement())
+  number    String   @unique
+  name      String
+  createdAt DateTime @default(now())
+}
+
+model Empresa {
+  id        Int      @id @default(autoincrement())
+  nome      String
+  endereco  String
+  instagram String
+  createdAt DateTime @default(now())
+}
+
+model Corretor {
+  id        Int      @id @default(autoincrement())
+  nome      String
+  contato   String
+  email     String   @unique
+  createdAt DateTime @default(now())
+}
+
+model Message {
+  id        Int      @id @default(autoincrement())
+  from      String
+  to        String
+  direction String
+  body      String
+  createdAt DateTime @default(now())
+}
+
+model Intencao {
+  id         Int      @id @default(autoincrement())
+  customerId String
+  resumo     String
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+}
