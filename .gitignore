@@ -1,0 +1,101 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ambientes
+.env
+.env.*
+
+# Diretórios e arquivos de sessão do WhatsApp Web.js
+.wwebjs_cache/
+.wwebjs_auth/
+*/.wwebjs_cache/
+*/.wwebjs_auth/
+*/session/
+*/qr.json
+*/status.json
+*/account.json
+
+# Diretórios específicos criados pelo WhatsApp Web.js
+**/backend/**/Default/
+**/backend/**/AutoFillStates/
+**/backend/**/GrShaderCache/
+**/backend/**/GPUCache/
+**/backend/**/Session Storage/
+**/backend/**/Local Storage/
+**/backend/**/databases/
+**/backend/**/blob_storage/
+
+# Prisma gerados localmente
+*.db
+prisma/migrations/
+prisma/dev.db
+
+# Outros arquivos de sistema
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Build artifacts
+dist/
+build/
+
+# Sessões e cache do Chromium usados por whatsapp-web.js
+*/session/
+*/session/**/Cache/**
+*/session/**/Code Cache/**
+*/session/**/DawnCache/**
+*/session/**/Download Service/**
+*/session/**/Extension Scripts/**
+*/session/**/Extension State/**
+*/session/**/Favicons*
+*/session/**/Feature Engagement Tracker/**
+*/session/**/GPUCache/**
+*/session/**/History*
+*/session/**/IndexedDB/**
+*/session/**/Local Storage/**
+*/session/**/Login Data*
+*/session/**/Network Action Predictor*
+*/session/**/Network Persistent State
+*/session/**/Platform Notifications/**
+*/session/**/Preferences
+*/session/**/Reporting and NEL*
+*/session/**/Safe Browsing Cookies*
+*/session/**/Secure Preferences
+*/session/**/Segmentation Platform/**
+*/session/**/Service Worker/**
+*/session/**/Session Storage/**
+*/session/**/Sessions/**
+*/session/**/SharedStorage
+*/session/**/Shortcuts*
+*/session/**/Site Characteristics Database/**
+*/session/**/Sync Data/**
+*/session/**/Top Sites*
+*/session/**/TransportSecurity
+*/session/**/Trust Tokens*
+*/session/**/Visited Links
+*/session/**/Web Data*
+*/session/**/WebStorage/**
+*/session/**/ZxcvbnData/**
+*/session/**/hyphen-data/**
+*/session/**/OptimizationHints/**
+*/session/**/OriginTrials/**
+*/session/**/PKIMetadata/**
+*/session/**/SSLErrorAssistant/**
+*/session/**/SafetyTips/**
+*/session/**/TrustTokenKeyCommitments/**
+*/session/**/UrlParamClassifications/**
+*/session/**/Variations
+*/session/**/FirstPartySetsPreloaded/**
+*/session/**/DesktopSharingHub/**
+*/session/**/MEIPreload/**
+*/session/**/OnDeviceHeadSuggestModel/**
+*/session/**/ShaderCache/**
+*/session/**/singleton*
+*/status.json
+*/account.json
+*/qr.json
+
