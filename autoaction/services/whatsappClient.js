@@ -56,14 +56,26 @@ function startWhatsappClient() {
 
   client.on('message', async (msg) => {
     await setSchema('autoaction');
+
+    // 🚫 IGNORAR MENSAGENS DE GRUPO
+    if (msg.from.endsWith('@g.us')) {
+      console.log(`Mensagem ignorada (grupo): ${msg.from}`);
+      return;
+    }
+
     const text = msg.body.trim();
-    const user = msg.from;
-    const resposta = await gerarRespostaGemini(text, user);
+    const rawUser = msg.from;
+    const userNumber = rawUser.replace('@c.us', '');
 
-    await client.sendMessage(user, resposta);
+    const resposta = await gerarRespostaGemini(text); // apenas texto enviado
 
-    await prisma.message.create({ data: { from: user, to: 'assistente', direction: 'received', body: text } });
-    await prisma.message.create({ data: { from: 'assistente', to: user, direction: 'sent', body: resposta } });
+    await client.sendMessage(rawUser, resposta);
+
+    await prisma.message.create({ data: { from: userNumber, to: 'assistente', direction: 'received', body: text } });
+    await prisma.message.create({ data: { from: 'assistente', to: userNumber, direction: 'sent', body: resposta } });
+
+    const contato = await client.getContactById(rawUser);
+    await salvarContato(userNumber, contato.pushname || 'Nome não disponível');
   });
 
   client.initialize();
