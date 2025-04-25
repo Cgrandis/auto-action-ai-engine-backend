@@ -32,3 +32,21 @@ model Example {
   createdAt   DateTime @default(now())
 }
 
+model ConversaResumo {
+  id           Int      @id @default(autoincrement())
+  numero       String   @unique
+  resumo       String
+  ultimaMensagemUsuario String?
+  ultimaMensagemAssistente String?
+  atualizadoEm DateTime @updatedAt
+  criadoEm     DateTime @default(now())
+}
+
+model Portfolio {
+  id          Int      @id @default(autoincrement())
+  servico     String
+  descricao   String
+  criadoEm    DateTime @default(now())
+  atualizadoEm DateTime @updatedAt
+}
+

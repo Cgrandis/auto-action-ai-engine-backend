@@ -67,7 +67,7 @@ function startWhatsappClient() {
     const rawUser = msg.from;
     const userNumber = rawUser.replace('@c.us', '');
 
-    const resposta = await gerarRespostaGemini(text); // apenas texto enviado
+    const resposta = await gerarRespostaGemini(text, userNumber);
 
     await client.sendMessage(rawUser, resposta);
 
